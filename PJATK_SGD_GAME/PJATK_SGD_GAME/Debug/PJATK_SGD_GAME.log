@@ -1,0 +1,3 @@
+﻿  globals.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\globals.cpp(4,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  PJATK_SGD_GAME.vcxproj -> C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\Debug\PJATK_SGD_GAME.exe
