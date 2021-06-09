@@ -149,9 +149,11 @@
     <ClCompile Include="animationSet.cpp" />
     <ClCompile Include="cleanup.cpp" />
     <ClCompile Include="drawing_functions.cpp" />
+    <ClCompile Include="entity.cpp" />
     <ClCompile Include="frame.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="groupBuilder.cpp" />
+    <ClCompile Include="livingEntity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="res_path.cpp" />
     <ClCompile Include="timeController.cpp" />
@@ -162,6 +164,7 @@
     <ClInclude Include="cleanup.h" />
     <ClInclude Include="dataGroupType.h" />
     <ClInclude Include="drawing_functions.h" />
+    <ClInclude Include="entity.h" />
     <ClInclude Include="frame.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="group.h" />
@@ -170,6 +173,7 @@
     <ClInclude Include="groupNumber.h" />
     <ClInclude Include="groupPosition.h" />
     <ClInclude Include="groupString.h" />
+    <ClInclude Include="livingEntity.h" />
     <ClInclude Include="res_path.h" />
     <ClInclude Include="timeController.h" />
   </ItemGroup>

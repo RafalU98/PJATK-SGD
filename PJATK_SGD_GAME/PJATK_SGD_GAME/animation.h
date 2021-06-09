@@ -17,6 +17,4 @@ public:
 	void loadAnimation(ifstream& file, list<DataGroupType>& groupTypes);
 };
 
-
-
 #endif 

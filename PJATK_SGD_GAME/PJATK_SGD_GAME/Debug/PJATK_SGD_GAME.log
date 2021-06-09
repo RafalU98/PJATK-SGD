@@ -1,9 +1,34 @@
-﻿  animationSet.cpp
-  animations.cpp
+﻿  animations.cpp
 C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\animations.cpp(10,22): warning C4018: '<': signed/unsigned mismatch
 C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\animations.cpp(32,53): warning C4018: '<': signed/unsigned mismatch
+  animationSet.cpp
+  entity.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(88,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(89,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(119,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(121,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(162,26): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(163,26): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(172,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(188,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(193,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(239,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(240,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(242,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\entity.cpp(243,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   frame.cpp
 C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\frame.cpp(5,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\frame.cpp(6,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  globals.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\globals.cpp(4,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  groupBuilder.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\groupBuilder.cpp(51,26): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  livingEntity.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\livingEntity.cpp(11,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\livingEntity.cpp(12,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\livingEntity.cpp(19,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+  timeController.cpp
+C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\timeController.cpp(17,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   Generating Code...
   PJATK_SGD_GAME.vcxproj -> C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\Debug\PJATK_SGD_GAME.exe

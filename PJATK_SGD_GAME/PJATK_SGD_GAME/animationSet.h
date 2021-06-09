@@ -13,9 +13,8 @@ public:
 	~AnimationSet(); //destructor to properly clean any dynamic memory e.g. textures
 
 	Animation* getAnimation(string name);
-
 																			//set a "color" to transperent
-																										//works for 8bit images, set the transperent color
+																										//set which color is the transperent color
 																																	  //set white texture for example "fast movement of character" << dash like
 	void loadAnimationSet(string fileName, list<DataGroupType>& groupTypes, bool setCoulourKey = false, int transparentPixelIndex = 0, bool createWhiteTexture = false);
 
