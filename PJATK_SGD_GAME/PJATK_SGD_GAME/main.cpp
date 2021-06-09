@@ -33,7 +33,7 @@ int main(int argc, char** agv) {
 		return 1;
 	}
 
-	//size to draw things before window scaling (f.e. fullscreen)
+	//size to draw things before window scaling (e.g. fullscreen)
 	SDL_RenderSetLogicalSize(Globals::renderer, 640, 352);
 
 	//initilaise sdl_image to use png
