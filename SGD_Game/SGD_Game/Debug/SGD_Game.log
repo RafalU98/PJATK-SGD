@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\main.cpp(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  SGD_Game.vcxproj -> C:\Users\rafal\Desktop\SGD_Game\Debug\SGD_Game.exe

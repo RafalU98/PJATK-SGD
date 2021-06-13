@@ -1,9 +1,0 @@
-﻿  animationSet.cpp
-  animations.cpp
-C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\animations.cpp(10,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\animations.cpp(32,53): warning C4018: '<': signed/unsigned mismatch
-  frame.cpp
-C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\frame.cpp(5,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\PJATK_SGD_GAME\frame.cpp(6,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  PJATK_SGD_GAME.vcxproj -> C:\Users\rafal\Documents\SGD\PJATK_SGD_GAME\Debug\PJATK_SGD_GAME.exe
