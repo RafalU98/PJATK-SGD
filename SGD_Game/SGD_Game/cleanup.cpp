@@ -1,26 +1,26 @@
 #include "cleanup.h"
 
-void cleanup(SDL_Window *win){
-	if (!win){
+void cleanup(SDL_Window *window){
+	if (!window){
 		return;
 	}
-	SDL_DestroyWindow(win);
+	SDL_DestroyWindow(window);
 }
-void cleanup(SDL_Renderer *ren){
-	if (!ren){
+void cleanup(SDL_Renderer *renderer){
+	if (!renderer){
 		return;
 	}
-	SDL_DestroyRenderer(ren);
+	SDL_DestroyRenderer(renderer);
 }
-void cleanup(SDL_Texture *tex){
-	if (!tex){
+void cleanup(SDL_Texture *texture){
+	if (!texture){
 		return;
 	}
-	SDL_DestroyTexture(tex);
+	SDL_DestroyTexture(texture);
 }
-void cleanup(SDL_Surface *surf){
-	if (!surf){
+void cleanup(SDL_Surface *surface){
+	if (!surface){
 		return;
 	}
-	SDL_FreeSurface(surf);
+	SDL_FreeSurface(surface);
 }

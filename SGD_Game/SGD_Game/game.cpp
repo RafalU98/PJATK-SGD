@@ -4,6 +4,11 @@
 Game::Game(){
 	std::string resPath = getResourcePath();
 	backgroundImage = loadTexture(resPath + "map.png", Globals::renderer);
+	splashImage = loadTexture(resPath + "title.png", Globals::renderer);
+	overlayImage = loadTexture(resPath + "overlay.png", Globals::renderer);
+
+	splashShowing = true;
+	overlayTimer = 2;
 
 	//holds a list of group types. this list describes the types of groups of data our frames can have!
 	std::list<DataGroupType> dataGroupTypes;
@@ -34,6 +39,9 @@ Game::Game(){
 
 	globAnimSet = new AnimationSet();
 	globAnimSet->loadAnimationSet("glob.fdset", dataGroupTypes, true, 0, true);
+
+	grobAnimSet = new AnimationSet();
+	grobAnimSet->loadAnimationSet("grob.fdset", dataGroupTypes, true, 0, true);
 
 	wallAnimSet = new AnimationSet();
 	wallAnimSet->loadAnimationSet("wall.fdset", dataGroupTypes);
@@ -87,12 +95,18 @@ Game::Game(){
 
 Game::~Game(){
 	cleanup(backgroundImage);
+	cleanup(splashImage);
+	cleanup(overlayImage);
+
+	if (scoreTexture != NULL) // if used
+		cleanup(scoreTexture);
 
 	Entity::removeAllFromList(&Entity::entities, false);
 
 	delete heroAnimSet;
 	delete wallAnimSet;
 	delete globAnimSet;
+	delete grobAnimSet;
 
 	delete hero;
 
@@ -135,23 +149,45 @@ void Game::update(){
 					quit = true;
 					break;
 				case SDL_SCANCODE_SPACE:
-					hero->revive();
-					break;
+					if (splashShowing)
+						splashShowing = false;
+					if (overlayTimer <= 0 && hero->hp < 1) {
+						//cleanup and restart the game
+						enemiesToBuild = 2;
+						enemiesBuilt = 0;
+						enemyBuildTimer = 3;
+						overlayTimer = 2;
 
+						Glob::globsKilled = 0;
+						Grob::grobsKilled = 0;
+						if (scoreTexture != NULL) {
+							cleanup(scoreTexture);
+							scoreTexture = NULL;
+						}
+						//remove all existing enemies
+						for (std::list<Entity*>::iterator enemy = enemies.begin(); enemy != enemies.end(); enemy++) {
+							(*enemy)->active = false;
+						}
+						hero->revive();
+					}
+					break;
 				}
 			}
 			heroInput.update(&e);
 		}
+		//make our overlay timer tick down
+		if (hero->hp < 1 && overlayTimer > 0) {
+			overlayTimer -= TimeController::timeController.dT;
+		}
 
 		//update all entities
 		for (std::list<Entity*>::iterator entity = Entity::entities.begin(); entity != Entity::entities.end(); entity++){
-			//remember how awesome polymorphism is?
 			//update all entities in game world at once
 			(*entity)->update();
 		}
 
 		//spawn enemies
-		if (hero->hp > 0) {
+		if (hero->hp > 0 && !splashShowing) {
 			if (enemiesToBuild == enemiesBuilt) {
 				enemiesToBuild = enemiesToBuild * 2;
 				enemiesBuilt = 0;
@@ -165,6 +201,17 @@ void Game::update(){
 				enemey->invincibleTimer = 0.1;
 				enemies.push_back(enemey);
 				Entity::entities.push_back(enemey);
+
+				if (enemiesBuilt % 5 == 0)
+				{
+					Grob* grob = new Grob(grobAnimSet);
+					grob->x = getRandomNumber(Globals::ScreenWidth - (2 * 32) - 32) + 32 + 16; //random x value between our walls
+					grob->y = getRandomNumber(Globals::ScreenHeight - (2 * 32) - 32) + 32 + 16; //random x value between our walls
+					grob->invincibleTimer = 0.01;
+
+					enemies.push_back(grob);
+					Entity::entities.push_back(grob);
+				}
 			}
 		}
 		//draw all entities
@@ -177,16 +224,36 @@ void Game::draw(){
 	SDL_SetRenderDrawColor(Globals::renderer, 145, 133, 129, SDL_ALPHA_OPAQUE);
 	SDL_RenderClear(Globals::renderer);
 
-	//draw the background
-	renderTexture(backgroundImage, Globals::renderer, 0, 0);
 
-	//sort all entities based on y(depth)
-	Entity::entities.sort(Entity::EntityCompare);
-	//draw all of the entities
-	for (std::list<Entity*>::iterator entity = Entity::entities.begin(); entity != Entity::entities.end(); entity++){
-		(*entity)->draw();
+	if (splashShowing) {
+		renderTexture(splashImage, Globals::renderer, 0, 0);
 	}
+	else {
+		//draw the background
+		renderTexture(backgroundImage, Globals::renderer, 0, 0);
+	
+		//sort all entities based on y(depth)
+		Entity::entities.sort(Entity::EntityCompare);
+		//draw all of the entities
+		for (std::list<Entity*>::iterator entity = Entity::entities.begin(); entity != Entity::entities.end(); entity++){
+			(*entity)->draw();
+		}
 
+		if (overlayTimer <= 0 && hero->hp < 1) {
+			renderTexture(overlayImage, Globals::renderer, 0, 0);
+			if (scoreTexture == NULL) {
+				SDL_Color color = { 255, 0,0 ,255 };
+
+				std::stringstream ss;
+
+				ss << "ENEMIES KILLED: " << Glob::globsKilled + Grob::grobsKilled;
+
+				std::string resPath = getResourcePath();
+				scoreTexture = renderText(ss.str(), resPath + "vermin_vibes_1989.ttf", color, 45, Globals::renderer);
+			}
+			renderTexture(scoreTexture, Globals::renderer, 40, 50);
+		}
+	}
 	//after we're done drawing/rendering, show it to the screen
 	SDL_RenderPresent(Globals::renderer);
 }

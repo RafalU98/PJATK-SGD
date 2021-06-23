@@ -15,8 +15,6 @@ public:
 
 	TimeController();
 	void updateTime();//update lastUpdate and dT
-	void pause();
-	void resume();
 	void reset();
 
 	static TimeController timeController;

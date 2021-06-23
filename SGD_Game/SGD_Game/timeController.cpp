@@ -17,12 +17,6 @@ void TimeController::updateTime(){
 	}
 	lastUpdate = SDL_GetTicks();
 }
-void TimeController::pause(){
-	timeState = PAUSE_STATE;
-}
-void TimeController::resume(){
-	timeState = PLAY_STATE;
-}
 void TimeController::reset(){
 	dT = 0;
 	lastUpdate = SDL_GetTicks();

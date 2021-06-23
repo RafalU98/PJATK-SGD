@@ -1,3 +1,69 @@
-﻿  main.cpp
+﻿  animation.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\animation.cpp(8,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\animation.cpp(27,53): warning C4018: '<': signed/unsigned mismatch
+  animationSet.cpp
+  cleanup.cpp
+  drawing_functions.cpp
+  entity.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(76,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(77,21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(109,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(111,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(115,25): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(115,55): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(159,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(160,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(170,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(188,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(192,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(233,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(234,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(236,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\entity.cpp(237,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  frame.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\frame.cpp(5,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\frame.cpp(6,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  game.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(52,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(53,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(65,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(66,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(72,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(73,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(81,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(82,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(88,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(89,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(199,76): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(200,77): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(201,34): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(208,75): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(209,76): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\game.cpp(210,34): warning C4305: '=': truncation from 'double' to 'float'
+  glob.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\glob.cpp(38,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\glob.cpp(39,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\glob.cpp(81,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\glob.cpp(272,28): warning C4305: '=': truncation from 'double' to 'float'
+  grob.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\grob.cpp(26,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\grob.cpp(27,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\grob.cpp(81,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\grob.cpp(212,28): warning C4305: '=': truncation from 'double' to 'float'
+  hero.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(32,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(33,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(84,24): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(97,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(98,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\hero.cpp(206,28): warning C4305: '=': truncation from 'double' to 'float'
+  keyboardInput.cpp
+  livingEntity.cpp
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\livingEntity.cpp(11,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\livingEntity.cpp(12,41): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\rafal\Desktop\SGD_Game\SGD_Game\livingEntity.cpp(19,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  main.cpp
 C:\Users\rafal\Desktop\SGD_Game\SGD_Game\main.cpp(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  wall.cpp
+  Generating Code...
   SGD_Game.vcxproj -> C:\Users\rafal\Desktop\SGD_Game\Debug\SGD_Game.exe

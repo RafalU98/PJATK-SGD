@@ -24,7 +24,7 @@ public:
 	float moveSpeedMax; //max speed of something
 	float slideAngle; //direction pushed in
 	float slideAmount; //amount of push in the slideAngle
-	float moveLerp = 4;
+	float moveLerp = 2; //moving "factor"  
 
 	SDL_Rect collisionBox; //box describing the size of our entity and this is used to bump into things
 	SDL_Rect lastCollisionBox; //where our collisionbox was last

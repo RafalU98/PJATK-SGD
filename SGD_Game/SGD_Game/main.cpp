@@ -19,7 +19,7 @@ int main(int argc, char **agv){
 		return 1;
 	}
 	//setup window
-	SDL_Window *window = SDL_CreateWindow("Francuska ktora sie bije bagietka ze Slimakami", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
+	SDL_Window *window = SDL_CreateWindow("GAME_SGD_BATTLE W/ SLIMES", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
 		Globals::ScreenWidth*Globals::ScreenScale, Globals::ScreenHeight*Globals::ScreenScale
 		, SDL_WINDOW_SHOWN); //SDL_WINDOW_SHOWN | SDL_WINDOW_FULLSCREEN
 	if (window == nullptr){

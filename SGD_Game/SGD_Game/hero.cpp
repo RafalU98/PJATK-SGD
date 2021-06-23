@@ -33,7 +33,7 @@ Hero::Hero(AnimationSet *animSet){
 	y = Globals::ScreenHeight / 2;
 	moveSpeed = 0;
 	moveSpeedMax = 80;
-	hp = hpMax = 20;
+	hp = hpMax = 40;
 	damage = 0;
 	collisionBoxW = 20;
 	collisionBoxH = 24;
@@ -80,11 +80,10 @@ void Hero::dash(){
 
 		//push the hero in the direction they are travelling
 		slideAngle = angle;
-		slideAmount = 300;
+		slideAmount = 200;
 		invincibleTimer = 0.1;
 
 		changeAnimation(HERO_STATE_DASH, true);
-		//TODO add dash sound!
 	}
 }
 void Hero::die(){
@@ -208,7 +207,7 @@ void Hero::updateDamages(){
 					}
 
 					slideAngle = Entity::angleBetweenTwoEntities((*entity), this);
-					slideAmount = 150;
+					slideAmount = 100;
 				}
 			}
 		}
